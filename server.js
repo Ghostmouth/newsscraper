@@ -24,7 +24,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // routing
-app.use("/", htmlRouter);
+app.use("/", htmlRouter);  // / might be causing errors
 app.use("/", articleRouter);
 
 // make directory public

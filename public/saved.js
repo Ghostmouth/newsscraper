@@ -76,9 +76,10 @@ $(document).ready(function() {
 	    method: "POST",
 	    url: "/unsave/" + articleID,
 	    data: {
-	      saved: false
+				saved: false
 	    }
-	  });
+		});
+		location.reload();
 	});
 
 });
